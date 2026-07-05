@@ -12,7 +12,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
           <div>
             <p className="text-xs text-gray-500">Plat House</p>
-            <h1 className="text-lg font-bold text-gray-900">新大塚</h1>
+            <h1 className="text-lg font-bold text-gray-900">浅草</h1>
           </div>
           <nav className="hidden md:flex gap-6 text-sm text-gray-600">
             <a href="#rooms" className="hover:text-gray-900">客室</a>
@@ -29,10 +29,10 @@ export default function Home() {
       <main>
         <section className="bg-gray-50 py-20 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-sm text-gray-500 mb-3">Shin-Otsuka · Bunkyo-ku Tokyo</p>
+            <p className="text-sm text-gray-500 mb-3">Asakusa · Taito-ku Tokyo</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">{hotel.catchcopy.ja}</h2>
-            <p className="text-gray-600 text-lg mb-4">新大塚駅・東池袋駅から徒歩10分。グループにも2名様にも対応する2タイプの客室。</p>
-            <p className="text-gray-500 text-base mb-8">Netflix・Nintendo Switch・10ギガインターネット・ドラム式洗濯機完備。駐車場あり（有料2,500円）。</p>
+            <p className="text-gray-600 text-lg mb-4">浅草駅から徒歩4分。浅草寺・仲見世すぐそば。2名様専用の快適な客室。</p>
+            <p className="text-gray-500 text-base mb-8">Netflix・Nintendo Switch・ポケットWi-Fi・置き型Wi-Fi完備。浅草観光の拠点に最適。</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="#booking" className="bg-gray-900 text-white px-8 py-3 rounded-full text-base font-medium hover:bg-gray-700 transition">今すぐ予約する</a>
               <a href="#rooms" className="border border-gray-300 text-gray-700 px-8 py-3 rounded-full text-base hover:bg-gray-50 transition">客室を見る</a>
@@ -43,10 +43,10 @@ export default function Home() {
 
         <section className="py-10 px-4 bg-white border-b border-gray-100">
           <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div className="p-4"><p className="text-3xl font-bold text-gray-900">最大8名</p><p className="text-sm text-gray-500 mt-1">客室A（3DK）</p></div>
-            <div className="p-4"><p className="text-3xl font-bold text-gray-900">2タイプ</p><p className="text-sm text-gray-500 mt-1">客室から選べる</p></div>
-            <div className="p-4"><p className="text-3xl font-bold text-gray-900">80㎡</p><p className="text-sm text-gray-500 mt-1">広々3DK客室</p></div>
-            <div className="p-4"><p className="text-3xl font-bold text-gray-900">徒歩10分</p><p className="text-sm text-gray-500 mt-1">新大塚・東池袋駅</p></div>
+            <div className="p-4"><p className="text-3xl font-bold text-gray-900">2室</p><p className="text-sm text-gray-500 mt-1">プライベート客室</p></div>
+            <div className="p-4"><p className="text-3xl font-bold text-gray-900">各2名</p><p className="text-sm text-gray-500 mt-1">カップル・2名様向け</p></div>
+            <div className="p-4"><p className="text-3xl font-bold text-gray-900">28㎡</p><p className="text-sm text-gray-500 mt-1">快適な広さ</p></div>
+            <div className="p-4"><p className="text-3xl font-bold text-gray-900">徒歩4分</p><p className="text-sm text-gray-500 mt-1">浅草駅から</p></div>
           </div>
         </section>
 
@@ -66,8 +66,8 @@ export default function Home() {
 
         <section id="rooms" className="py-14 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">客室タイプ</h2>
-            <p className="text-center text-gray-500 mb-10">グループ旅行に最適な3DKと、2名様向けのスタジオ。用途に合わせてお選びください。</p>
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">客室</h2>
+            <p className="text-center text-gray-500 mb-10">2名様専用の快適な客室を2室ご用意。どちらも同じ設備でお過ごしいただけます。</p>
             <div className="grid md:grid-cols-2 gap-6">
               {rooms.map((room) => (
                 <div key={room.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
@@ -121,7 +121,7 @@ export default function Home() {
           <section className="py-14 px-4 bg-white">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">旅行・観光ガイド</h2>
-              <p className="text-center text-gray-500 mb-10">新大塚・東池袋エリアの最新情報</p>
+              <p className="text-center text-gray-500 mb-10">浅草・台東区エリアの最新情報</p>
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 {latestPosts.map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`}>
@@ -158,13 +158,12 @@ export default function Home() {
 
         <section id="booking" className="py-20 px-4 bg-gray-900 text-white">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-3">新大塚・東池袋エリア。2タイプの客室から選べる</h2>
+            <h2 className="text-2xl font-bold mb-3">浅草駅4分。下町の魅力を、2名様だけの空間で</h2>
             <p className="text-gray-400 mb-2">OTAより安い公式直接予約 · 最安値保証 · 7日前まで無料キャンセル</p>
             <p className="text-gray-500 text-sm mb-8">チェックイン {hotel.checkIn} · チェックアウト {hotel.checkOut} · {hotel.cancelPolicy}</p>
             <div className="bg-gray-800 rounded-2xl p-6 mb-6">
               <p className="text-3xl font-bold mb-1">¥{hotel.price.min.toLocaleString()}〜</p>
-              <p className="text-gray-400 text-sm">1泊あたり（税込）+ 清掃費別途</p>
-              <p className="text-gray-500 text-xs mt-2">3DK客室（最大8名）· スタジオ（最大2名）</p>
+              <p className="text-gray-400 text-sm">1泊あたり（税込）+ 清掃費別途 · 最大2名</p>
             </div>
             <a href={hotel.bookingUrl} target="_blank" className="inline-block bg-white text-gray-900 px-10 py-4 rounded-full text-base font-bold hover:bg-gray-100 transition">今すぐ最安値で予約する</a>
           </div>

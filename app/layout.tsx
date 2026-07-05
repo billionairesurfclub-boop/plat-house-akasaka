@@ -9,25 +9,25 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "ぷらっとハウス新大塚 | 新大塚・東池袋 民泊 最大8名 2タイプ客室",
+  title: "ぷらっとハウス浅草 | 浅草駅4分 民泊 カップル・2名様向け 28㎡",
   description:
-    "新大塚駅・東池袋駅徒歩10分。80㎡3DK（最大8名）と18㎡スタジオ（最大2名）の2タイプ。Netflix・Nintendo Switch・10ギガインターネット・ドラム式洗濯機完備。駐車場あり（有料）。",
+    "浅草駅から徒歩4分。28㎡の快適な客室2室。Netflix・Nintendo Switch・ポケットWi-Fi・置き型Wi-Fi完備。浅草寺・仲見世すぐそば。カップル・2名様の東京旅行に最適。",
   keywords:
-    "ぷらっとハウス新大塚, 新大塚 民泊, 新大塚 宿泊, 東池袋 民泊, 文京区 民泊, 東京 グループ宿泊, 新大塚 一棟貸し, Tokyo Shin-Otsuka accommodation, 新大塚 ファミリー旅行",
+    "ぷらっとハウス浅草, 浅草 民泊, 浅草 宿泊, 浅草 カップル, 浅草 2名, 台東区 民泊, 浅草 観光 宿泊, Asakusa accommodation, Tokyo Asakusa stay, 浅草寺 近く 宿泊",
   openGraph: {
-    title: "ぷらっとハウス新大塚 | 新大塚・東池袋 民泊 最大8名",
+    title: "ぷらっとハウス浅草 | 浅草駅4分 民泊 カップル向け",
     description:
-      "新大塚駅徒歩10分。80㎡3DK（最大8名）と18㎡スタジオ（最大2名）。Netflix・Switch・10ギガ完備。駐車場あり。",
-    url: "https://shinotsuka.plat-house.jp",
-    siteName: "Plat House Shin-Otsuka",
+      "浅草駅4分。28㎡の客室2室。Netflix・Switch・Wi-Fi完備。浅草観光の拠点に最適。",
+    url: "https://asakusa.plat-house.jp",
+    siteName: "Plat House Asakusa",
     locale: "ja_JP",
     type: "website",
   },
   alternates: {
-    canonical: "https://shinotsuka.plat-house.jp",
+    canonical: "https://asakusa.plat-house.jp",
     languages: {
-      "ja": "https://shinotsuka.plat-house.jp",
-      "en": "https://shinotsuka.plat-house.jp/en",
+      "ja": "https://asakusa.plat-house.jp",
+      "en": "https://asakusa.plat-house.jp/en",
     },
   },
 };
@@ -43,26 +43,25 @@ export default function RootLayout({
         <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LodgingBusiness",
-          "name": "ぷらっとハウス新大塚",
-          "url": "https://shinotsuka.plat-house.jp",
+          "name": "ぷらっとハウス浅草",
+          "url": "https://asakusa.plat-house.jp",
           "telephone": "08070583086",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "大塚6-25-5",
-            "addressLocality": "文京区",
+            "streetAddress": "西浅草3-25-4",
+            "addressLocality": "台東区",
             "addressRegion": "東京都",
-            "postalCode": "112-0012",
+            "postalCode": "111-0035",
             "addressCountry": "JP"
           },
           "checkinTime": "16:00",
           "checkoutTime": "11:00",
-          "priceRange": "¥20,000〜¥50,000",
+          "priceRange": "¥12,000〜¥25,000",
           "amenityFeature": [
             { "@type": "LocationFeatureSpecification", "name": "Netflix", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Nintendo Switch", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "10ギガインターネット", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "ドラム式洗濯機", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "駐車場", "value": true }
+            { "@type": "LocationFeatureSpecification", "name": "ポケットWi-Fi", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "置き型Wi-Fi", "value": true }
           ]
         }) }} />
         {children}
