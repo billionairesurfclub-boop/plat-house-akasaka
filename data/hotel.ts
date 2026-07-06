@@ -88,7 +88,18 @@ export const rooms = [
       ja: "40㎡の1DK戸建て一棟貸切。高品質なEmma Premium 2キングベッドを2台ご用意。最大4名様でご利用いただけます。赤坂駅から徒歩4分の好立地です。",
       en: "Entire 40㎡ 1DK house. Features 2 premium Emma Premium 2 king beds. Accommodates up to 4 guests. 4 min walk from Akasaka Station.",
     },
-    images: [],
+    images: [
+    "/images/photo-01.jpg",
+    "/images/photo-02.jpg",
+    "/images/photo-03.jpg",
+    "/images/photo-04.jpg",
+    "/images/photo-05.jpg",
+    "/images/photo-06.jpg",
+    "/images/photo-07.jpg",
+    "/images/photo-08.jpg",
+    "/images/photo-09.jpg",
+    "/images/photo-10.jpg"
+  ],
   }
 ];
 
