@@ -9,6 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "gXHCgYW1liWYzDHLdMnZqsms3IllJliPGWeecgZRK5E",
+  },
   title: "ぷらっとハウス赤坂 | 赤坂駅徒歩4分 40㎡1DK 最大4名 民泊",
   description:
     "赤坂駅（東京メトロ千代田線）徒歩4分。40㎡の1DK戸建て一棟貸切・最大4名。Emma Premium 2キングベッド×2・Netflix・キッチン完備。赤坂・六本木エリアのグループ旅行に最適。",
